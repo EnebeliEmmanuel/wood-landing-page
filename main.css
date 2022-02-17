@@ -1,8 +1,4 @@
-
-
-
-
-
+/* universal selector */
 * {
   border: 0;
   margin: 0;
@@ -10,26 +6,23 @@
   box-sizing: border-box;
   font-family: "Mark-Pro", sans-serif;
 }
-
+/* general styling */
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
-background: #fff4d6;
-border-radius: 1rem;
+  background: #fff4d6;
+  border-radius: 1rem;
 }
 .lg-heading {
   font-size: 3rem;
-  
 }
-
 
 .lf-heading {
   font-size: 2rem;
-  
 }
 
-.text-secondary{
+.text-secondary {
   color: #301201;
 }
 
@@ -38,21 +31,66 @@ border-radius: 1rem;
   src: url("./fonts/Mark-Pro.ttf");
 }
 
-.about-me {
-  /* background: radial-gradient(37.11% 37.11% at 50% 50%, rgba(19, 21, 23, 0.85) 0%, #131517 100%); */
-  padding: 30px 5% 30px 5%;
-  color: #ffffff;
+/* about us and images by the side styling started */
+/* Hero */
+#hero {
+  height: calc(100vh - 74.5px);
+  background-color: #fff4d6;
   display: flex;
-  justify-content: space-between;
-  margin-top: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
 }
 
-.projects-section {
+/* Hero Information */
+
+#hero_info {
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+#hero h1 {
+  color: #141414;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.7em;
+  line-height: 1;
+  text-align: center;
+}
+
+#hero p {
+  font-size: 1.5em;
+  text-align: center;
+  opacity: 0.7;
+  max-width: 500px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hero button {
+  background-color: #a57f60;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+.card_img_con {
+  width: 100%;
+  height: 300px;
+  background: url(./images/unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+/* about us and images by the side styling ended */
+
+/* /* project section for wood start */
+*/ .projects-section {
   margin-top: 80px;
-  
 }
-
-
 
 .project-image-container {
   overflow: hidden;
@@ -61,7 +99,7 @@ border-radius: 1rem;
 }
 
 .project-image {
- width: 80%;
+  width: 80%;
   object-fit: cover;
   object-position: center;
 }
@@ -90,7 +128,6 @@ border-radius: 1rem;
   align-items: center;
 }
 
-
 .check-project {
   padding-top: 25px;
   display: flex;
@@ -108,6 +145,20 @@ border-radius: 1rem;
   color: #fdde6d;
 }
 
+div.a-project-card {
+  position: relative;
+  transition-property: margin-top;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+div.a-project-card:hover {
+  margin-top: -10px;
+}
+
+/* project section for wood ended */
+
+/* contact section start */
 .contact-me {
   text-align: center;
   margin-top: 70px;
@@ -121,18 +172,18 @@ border-radius: 1rem;
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
-  color: #e1e1e1;
+  color: #5a2202;
 }
 
 .contact-me > a {
   font-size: 19px;
   line-height: 37px;
-  color: #ffffff;
+  color: #0f0f0f;
   text-decoration: none;
 }
 
 .contact-me > a:hover {
-  color: #fdde6d;
+  color: #5a2202;
   transition: all 0.2s ease-in-out;
 }
 
@@ -149,99 +200,16 @@ border-radius: 1rem;
 }
 
 .contact-me > span > a:hover {
-  color: #fdde6d;
+  color: #5a2202;
   transition: all 0.2s ease-in-out;
 }
+/* contact section end */
 
-div.a-project-card {
-  position: relative;
-  transition-property: margin-top;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-div.a-project-card:hover {
-  margin-top: -10px;
-}
-
-
-.css-typewriting-container {
-  display: inline-flex;
-  margin-bottom: 5px;
-}
-
-.dynamic-text li span {
-  position: relative;
-}
-
-.css-typewriting-container-2 {
-  display: inline-flex;
-  margin-bottom: 5px;
-}
-
-.dynamic-text-2 li span {
-  position: relative;
-}
-
-.dynamic-text-2 li span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  /* height: 40px; */
-  height: fit-content;
-  width: 100%;
-  background: #131517;
-  border-left: 2px solid #fdde6d;
-  
-}
-
-li > a:hover {
-  color: #fdde6d;
-  transition: all 1s ease-in-out;
-}
-
-.socials-logo {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.socials-logo > span > a {
-  color: #5a5a5a;
-  margin-right: 20px;
-  font-size: 25px;
-}
-
-.socials-logo > span > a:hover {
-  color: #fdde6d;
-  transition: all 0.5s ease-in-out;
-}
-
-
-.Explore {
-  background-color: #5a2202;
-  padding: 13px;
-  margin-right: 40px;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 40px;
-  border-radius: 0.3rem;
-}
-
-.added {
-  margin-left: 4rem;
-  margin-top: 3rem;
-}
-
+/* wood images  */
 img {
   min-width: 100%;
 }
-.copyright-container > p {
-  text-align: center;
-  color: #1b1b1b;
-  line-height: 30px;
- 
-}
+/* end of wood images width */
 
 @keyframes typing {
   40%,

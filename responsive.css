@@ -1,0 +1,174 @@
+@media (min-width: 412px) {
+   .lg-heading {
+  font-size: 3rem;
+  margin-top: 1.3rem;
+  margin-left: 2.3rem;
+}
+}
+
+@media (min-width: 360px) {
+   .lg-heading {
+  font-size: 3rem;
+  margin-top: 1.3rem;
+  margin-left: 2.3rem;
+}
+}
+
+
+@media (min-width: 820px) {
+   .lg-heading {
+  font-size: 3rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+}
+
+@media (min-width: 768px) {
+   .lg-heading {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 0.5rem;
+  right: 4rem;
+}
+}
+
+
+
+@media (min-width: 660px) {
+  header {
+    align-items: baseline;
+  }
+
+  #ham_burger {
+    display: none;
+  }
+
+  #nav_con {
+    position: relative;
+    top: 0;
+    height: fit-content !important;
+  }
+
+  #nav_con ul {
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  /* Hero Information */
+  #hero_info h1 {
+    font-size: 3em;
+  }
+
+  #hero_info p {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 798px) {
+  section {
+    padding: 50px;
+  }
+
+  /* Hero */
+  #hero {
+    grid-gap: 50px;
+    justify-content: space-between;
+  }
+
+  /* Hero Information */
+  #hero_info {
+    display: block;
+  }
+
+  #hero_info h1,
+  #hero_info p {
+    text-align: left !important;
+    margin-bottom: 15px;
+  }
+
+  #hero_info button {
+    margin-top: 10px;
+  }
+
+  /* Hero Image */
+  #hero_img {
+    width: 500px;
+    height: 100%;
+    display: grid;
+  }
+
+  #hero_img span {
+    background-image: url(./images/unsplash1.jpg);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+    min-width: 150px;
+  }
+
+  #hero_img span:nth-child(1) {
+    background-position: center;
+  }
+
+  #hero_img span:nth-child(2) {
+    display: none;
+  }
+
+  #hero_img span:nth-child(3) {
+    display: none;
+  }
+
+  /* PRODUCTS SECTION */
+  #products_card_con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 20px 80px;
+  }
+
+  section {
+    padding: 50px 80px;
+  }
+
+  /* Hero Information */
+  #hero_info h1 {
+    font-size: 4em;
+  }
+
+  /* Hero Image */
+
+  #hero_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  #hero_img span:nth-child(1) {
+    background-position: left;
+  }
+
+  #hero_img span:nth-child(2) {
+    display: block;
+    background-position: center;
+    bottom: 5vh;
+  }
+}
+
+@media (min-width: 1120px) {
+  #hero_img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #hero_img span:nth-child(3) {
+    display: block;
+    background-position: right;
+  }
+
+  /* PRODUCTS SECTION */
+  #products_card_con {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

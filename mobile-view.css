@@ -1,4 +1,6 @@
 @media all and (max-width: 700px) {
+  
+ 
   nav {
     height: 100px;
     width: 100%;
@@ -7,6 +9,15 @@
     z-index: 10;
     background-color: #fdf3ba;
   }
+
+    .copyright-container > p {
+    text-align: center;
+    color: #1b1b1b;
+    line-height: 30px;
+    position: relative;
+    
+  }
+  
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -33,117 +44,18 @@
   }
 
  
-.about-me {
-  /* background: radial-gradient(37.11% 37.11% at 50% 50%, rgba(19, 21, 23, 0.85) 0%, #131517 100%); */
-  padding: 30px 5% 30px 5%;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 110px;
-}
-
-.a-nav-link {
-  color: #fff;
-}
-
-.added {
-  position: relative;
-  right: 2.5rem;
-}
-
-
-.css-typewriting-container {
-  display: inline-flex;
-  margin-bottom: 5px;
-}
-
-.dynamic-text li span {
-  position: relative;
-}
-
-.css-typewriting-container-2 {
-  display: inline-flex;
-  margin-bottom: 5px;
-}
-
-.dynamic-text-2 li span {
-  position: relative;
-}
-
-.dynamic-text-2 li span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  /* height: 40px; */
-  height: fit-content;
-  width: 100%;
-  background: #131517;
-  border-left: 2px solid #fdde6d;
-  
-}
-
-.static-text {
-  color: #161616;
- 
-  font-size: 35px;
-  font-weight: bold;
-}
-
-li > a:hover {
-  color: #fdde6d;
-  transition: all 1s ease-in-out;
-}
-
-.socials-logo {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.socials-logo > span > a {
-  color: #5a5a5a;
-  margin-right: 20px;
-  font-size: 25px;
-}
-
-.socials-logo > span > a:hover {
-  color: #fdde6d;
-  transition: all 0.5s ease-in-out;
-}
-
-.hire-me-btn {
-  background-color: #000000;
-  padding: 13px;
-  margin-right: 40px;
-  color: #fdde6d;
-  text-decoration: none;
-}
-.Explore {
-  background-color: #301201;
-  padding: 13px;
-  margin-right: 40px;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 40px;
-  border-radius: 0.3rem;
-}
 
 
 
-  .mini-mobile-nav {
-    padding: 0px 10px 15px 10px;
-  }
 
 
-  .main-logo:hover {
-    transform: rotate(360deg);
-  }
+
 
   #nav-links {
     display: block;
     width: 100%;
     margin-right: 0;
-    transition: all 3s ease-in-out;
+    transition: all 1s ease-in-out;
     margin-top: -100%;
    background-color: #727272;
     z-index: 5 !important;
@@ -221,10 +133,13 @@ li > a:hover {
 
 @media screen and (max-width: 900px) {
 
-    .image {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+  .lg-heading {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  right: 2rem;
+}
+
     .project-grid {
       display: grid;
       grid-template-columns: 1fr ;
@@ -251,13 +166,8 @@ li > a:hover {
       font-weight: 500;
       margin-bottom: 6rem;
     }
-    .copyright-container > p {
-      text-align: center;
-      color: #1b1b1b;
-      line-height: 30px;
-      position: relative;
-      left: 16rem;
-    }
+
+
 
 @keyframes circle {
   from {
@@ -319,9 +229,12 @@ prefers-reduced-motion {
 }
 
 @media screen and (max-width: 355px) {
-  .my-image-background {
-    display: none;
-  }
+ 
+  .lg-heading {
+  font-size: 3rem;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -347,13 +260,7 @@ prefers-reduced-motion {
     font-weight: 500;
   }
 
-  .copyright-container > p {
-    text-align: center;
-    color: #1b1b1b;
-    line-height: 30px;
-    position: relative;
-    left: 16rem;
-  }
+
   @keyframes circle {
     from {
       box-shadow: 0 0 0 0px #fdde6d;
